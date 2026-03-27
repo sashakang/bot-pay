@@ -1,0 +1,17 @@
+{
+  "name": "@bot-pay/core",
+  "version": "0.1.0",
+  "description": "Core domain models and payment state machine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}

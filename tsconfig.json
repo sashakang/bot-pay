@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020"],
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@bot-pay/core": ["packages/core/src/index.ts"],
+      "@bot-pay/core/*": ["packages/core/src/*"],
+      "@bot-pay/server": ["packages/server/src/index.ts"],
+      "@bot-pay/server/*": ["packages/server/src/*"],
+      "@bot-pay/mcp": ["packages/mcp/src/index.ts"],
+      "@bot-pay/mcp/*": ["packages/mcp/src/*"],
+      "@bot-pay/notification-telegram": ["packages/notification-telegram/src/index.ts"],
+      "@bot-pay/notification-telegram/*": ["packages/notification-telegram/src/*"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["packages/*/src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/server" },
+    { "path": "packages/mcp" },
+    { "path": "packages/notification-telegram" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "bot-pay",
+  "version": "0.1.0",
+  "description": "Open-source framework for agent payment approval",
+  "private": true,
+  "workspaces": [
+    "packages/core",
+    "packages/server",
+    "packages/mcp",
+    "packages/notification-telegram"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
