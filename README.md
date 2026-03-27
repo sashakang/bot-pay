@@ -12,7 +12,7 @@ You've trained an AI agent to do useful work: book flights, order supplies, pay 
 - **Closed platforms** lock you into their payment system
 - **Manual workflows** require you to be online to approve everything
 
-**bot-pay** solves this: agent requests payment → you approve in real-time → payment executes. Works with any payment system. Open source.
+**bot-pay** solves this: agent requests payment → you approve in real-time in your bank app like you usually do → payment executes. Works with any payment system. Open source.
 
 ## How It Works (60 seconds)
 
